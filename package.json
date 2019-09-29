@@ -1,14 +1,13 @@
 {
   "name": "typescript-jasmine-node-watch-tests-demo",
   "scripts": {
-    "test": "jasmine-ts",
-    "test:watch": "nodemon --ext ts --exec 'jasmine-ts'"
+    "test": "ts-node ./node_modules/jasmine/bin/jasmine.js spec/**/*-spec.ts",
+    "test:watch": "nodemon --ext ts --exec 'ts-node ./node_modules/jasmine/bin/jasmine.js spec/**/*-spec.ts'"
   },
   "devDependencies": {
     "@types/jasmine": "3.3.12",
     "@types/node": "8.9.5",
     "jasmine": "3.4.0",
-    "jasmine-ts": "0.3.0",
     "nodemon": "1.19.2",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
